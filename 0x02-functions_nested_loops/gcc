@@ -1,0 +1,8 @@
+#!/bin/bash
+printf "Enter the name of test file: "
+read test_file
+
+printf "Name of the function file: "
+read func_file
+
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c $test_file.c $func_file.c -o $func_file
