@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	long first, second, next, i, sum = 0;
+	long first, second, next, i, sum = 2;
 
 	first = 1;
 	second = 2;
 	next = first + second;
 
-	for (i = 3; i <= 34; i++)
+	for (i = 2; i <= 50; i++)
 	{
 		if (next % 2 == 0)
 			sum = sum + next;
@@ -21,6 +21,8 @@ int main(void)
 		second = next;
 		next = first + second;
 
+		if (next > 4000000)
+			break;
 	}
 	printf("%ld\n", sum);
 	return (0);
