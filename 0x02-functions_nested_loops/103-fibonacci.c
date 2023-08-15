@@ -7,19 +7,20 @@
 
 int main(void)
 {
-	long first, second, next, i, sum = 0;
+	long first, second, next, i, sum = 0, pos = 2;
 
 	first = 1;
 	second = 2;
 	next = first + second;
 
-	for (i = 3; i <= 50; i++)
+	for (i = 3; i <= 34; i++)
 	{
-		if (((first % 2) == 0) || ((second % 2) == 0) || ((next % 2) == 0))
-			sum = sum + i;
+		if (next % 2 == 0)
+			sum = sum + next;
 		first = second;
 		second = next;
 		next = first + second;
+
 	}
 	printf("%ld\n", sum);
 	return (0);
