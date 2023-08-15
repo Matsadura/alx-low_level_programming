@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	long first, second, next, i, sum = 0, pos = 2;
+	long first, second, next, i, sum = 0;
 
 	first = 1;
 	second = 2;
