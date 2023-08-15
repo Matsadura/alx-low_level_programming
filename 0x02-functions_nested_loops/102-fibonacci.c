@@ -7,20 +7,19 @@
 
 int main(void)
 {
-	int a[50], i = 50, next;
+	long long first, second, next, i;
 
-	a[0] = 1;
-	a[1] = 2;
-	next = a[0] + a[1];
+	first = 1;
+	second = 2;
+	next = first + second;
 
-	printf("%d %d ", a[0], a[1]);
-	for (i = 2; i <= 50; i++)
+	printf("%lld, %lld", first, second);
+	for (i = 3; i <= 50; i++)
 	{
-		printf("%d ", next);
-		i++;
-		a[0] = a[1];
-		a[1] = next;
-		next = a[0] + a[1];
+		printf(", %lld", next);
+		first = second;
+		second = next;
+		next = first + second;
 	}
 	putchar('\n');
 	return (0);
