@@ -63,7 +63,7 @@ void print_times_table(int n)
 			k = j * i;
 			if (n == 0)
 				_putchar('0');
-			else if (n > 15 )
+			else if (n > 15)
 				return;
 			else if (k == 0 && i == 0)
 			{
