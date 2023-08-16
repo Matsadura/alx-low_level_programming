@@ -35,7 +35,7 @@ int main(void)
 			fa2 = (a11 + a22);
 			fa = a1 + a2 + (fa2 / 1000000000);
 			printf(", %ld", fa);
-			printf("%ld", fa2 % 2000000000);
+			printf("%ld", fa2 % 1000000000);
 			a1 = a2;
 			a11 = a22;
 			a2 = fa;
