@@ -7,18 +7,18 @@
 int main(void)
 {
 	int c, boolean1, boolean2;
-	long int first, second, next, fa2, a11, a22;
+	long int a1, a2, fa, fa2, a11, a22;
 
-	first = 1;
-	second = 2;
+	a1 = 1;
+	a2 = 2;
 	boolean1 =  boolean2 = 1;
-	printf("%ld, %ld", first, second);
+	printf("%ld, %ld", a1, a2);
 	for (c = 0; c < 96; c++)
 	{
 		if (boolean1)
 		{
-			next = first + second;
-			printf(", %ld", next);
+			fa = a1 + a2;
+			printf(", %ld", fa);
 			a1 = a2;
 			a2 = fa;
 		}
@@ -35,7 +35,7 @@ int main(void)
 			fa2 = (a11 + a22);
 			fa = a1 + a2 + (fa2 / 1000000000);
 			printf(", %ld", fa);
-			printf("%ld", fa2 % 1000000000);
+			printf("%ld", fa2 % 2000000000);
 			a1 = a2;
 			a11 = a22;
 			a2 = fa;
