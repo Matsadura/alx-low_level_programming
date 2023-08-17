@@ -13,7 +13,7 @@ void print_square(int size)
 	{
 		for (colomn = 1; colomn <= size; colomn++)
 		{
-				_putchar('#');
+			_putchar('#');
 		}
 		_putchar('\n');
 	}
