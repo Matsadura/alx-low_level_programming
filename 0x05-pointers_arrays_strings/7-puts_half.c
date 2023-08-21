@@ -26,7 +26,7 @@ void puts_half(char *str)
 {
 	int i;
 	int n1 = _strlen(str) / 2;
-	int n2 = (_strlen(str)) / 2;
+	int n2 = (_strlen(str) - 1) / 2;
 
 	if (_strlen(str) % 2 == 0)
 	{
@@ -37,7 +37,7 @@ void puts_half(char *str)
 	}
 	else if (_strlen(str) % 2 != 0)
 	{
-		for (i = n2; str[i] != '\0'; i++)
+		for (i = n2 + 1; str[i] != '\0'; i++)
 		{
 			_putchar(str[i]);
 		}
