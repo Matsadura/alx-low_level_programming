@@ -28,12 +28,24 @@ int _strlen(char *s)
 int _strcmp(char *s1, char *s2)
 {
 	int i, j, max;
+	char *s3;
 
 	if (_strlen(s1) <= _strlen(s2))
+	{
 		max = _strlen(s1);
+		s3 = s1;
+	}
 	else
+	{
 		max = _strlen(s2);
-	for (i = 0; i <= max; i++)
+		s3 = s2;
+	}
+	for (i = 0; i <= max && s3[i] != '\0'; i++)
+	{
 		j = s1[i] - s2[i];
+
+		if (j != 0)
+			break;
+	}
 	return (j);
 }
