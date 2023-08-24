@@ -23,7 +23,7 @@ void reverse_array(int *a, int n)
 			*(a + n - 1 - i) = tmp;
 		}
 	}
-	else if (n % 2 != 0)
+	else
 	{
 		for (i = 0 ; i < j2; i++)
 		{
