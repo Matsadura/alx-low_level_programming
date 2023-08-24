@@ -11,6 +11,9 @@ void reverse_array(int *a, int n)
 	int i, tmp;
 	int j1 = n / 2, j2 = (n - 1) / 2;
 
+	if (n == 0)
+		a[i] = 0;
+
 	if (n % 2 == 0)
 	{
 		for (i = 0 ; i <= j1; i++)
