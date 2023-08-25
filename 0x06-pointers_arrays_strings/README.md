@@ -1,4 +1,4 @@
-# Mastering Pointers, Arrays, and Strings in C Programming
+# Mastering More Pointers, Arrays, and Strings in C Programming
 
 ## Learning Objectives
 
