@@ -18,7 +18,7 @@
 | [5-string_toupper.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/5-string_toupper.c) | Changes all lowercase letters of a string to uppercase. |
 | [6-cap_string.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/6-cap_string.c) | Capitalizes all words of a string. |
 | [7-leet.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/7-leet.c) |  Encodes a string into [1337](https://en.wikipedia.org/wiki/Leet). |
-| [100-rot13.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/100-rot13.c) | Encodes a string using (rot13)[https://en.wikipedia.org/wiki/ROT13]. |
+| [100-rot13.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/100-rot13.c) | Encodes a string using [rot13](https://en.wikipedia.org/wiki/ROT13). |
 | [101-print_number.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/101-print_number.c) | Prints an integer. |
 | [102-magic.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/102-magic.c) |  Prints ``a[2] = 98``. |
 | [103-infinite_add.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x06-pointers_arrays_strings/103-infinite_add.c) | Adds two numbers. |
