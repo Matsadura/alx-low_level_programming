@@ -1,24 +1,5 @@
 #include "main.h"
 #include <stddef.h>
-
-/**
- * len - return the length of a string
- * @s: the string
- * Return: the length
- */
-
-unsigned int len(char *s)
-{
-	int i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
 /**
  * _strstr - locates a substring
  * @haystack: the string
@@ -47,6 +28,6 @@ char *_strstr(char *haystack, char *needle)
 	if (needle[0] == '\0')
 		return (haystack);
 	if (haystack[i] == needle[j] && needle[j] == '\0')
-		return (haystack + i - len(needle));
+		return (haystack + i);
 	return (NULL);
 }
