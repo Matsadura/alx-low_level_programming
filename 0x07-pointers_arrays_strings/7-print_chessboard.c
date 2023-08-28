@@ -26,7 +26,7 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			if (i == 0 || i == 7)
+			if (i == 0)
 				_putchar(a[i][j]);
 			else if (i == 1)
 				_putchar(c);
@@ -34,8 +34,8 @@ void print_chessboard(char (*a)[8])
 				_putchar(' ');
 			else if (i == 6)
 				_putchar(c - 32);
-			/*else if (i == 7)
-				_putchar(b[i][j]); */
+			else if (i == 7)
+				_putchar(a[i][j]);
 			if (j == 7)
 				_putchar('\n');
 		}
