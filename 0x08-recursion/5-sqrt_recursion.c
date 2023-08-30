@@ -14,7 +14,7 @@ int _sqrt(int n, int y)
 	else if (y * y == n)
 		return (y);
 	else
-		return(_sqrt(n, y + 1));
+		return (_sqrt(n, y + 1));
 }
 
 /**
