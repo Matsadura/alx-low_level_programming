@@ -26,3 +26,4 @@ This learning module introduces you to the exciting world of C programming. We'l
 | [6-size.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x00-hello_world/6-size.c)     | Prints the size of various types on the computer it is compiled and run on.  |
 | [100-intel](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x00-hello_world/100-intel)     | Generates the assembly code (Intel syntax) of a C code and save it in an output file.  |
 | [101-quote.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x00-hello_world/101-quote.c)     | Prints exactly ``and that piece of art is useful" - Dora Korpar, 2015-10-19``, followed by a new line, to the standard error, without using ``puts`` ``putchar`` or ``printf``.  |
+| 101-quote.c  | [101-quote.c](./101-quote.c) |
