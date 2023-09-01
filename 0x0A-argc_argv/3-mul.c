@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		for (i = 1; i < argc ; i++)
+		for (i = 1; i < 3 ; i++)
 			mul = mul * atoi(argv[i]);
 	}
 	printf("%ld\n", mul);
