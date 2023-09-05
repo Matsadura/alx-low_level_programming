@@ -36,6 +36,29 @@ char *_strncpy(char *dest, char *src, int n)
 }
 
 /**
+ * count_words - counts the words in a string
+ * @str: the strings
+ * @len: it's length
+ * Return: the count of words
+ */
+
+int count_words(char *str, int len)
+{
+	int word_count = 0, i;
+
+	for (i = 0; i < len; i++)
+	{
+		if (str[i] != ' ')
+		{
+			word_count++;
+			while (str[i] != ' ' && i < len)
+				i++;
+		}
+	}
+	return (word_count);
+}
+
+/**
  * strtow - splits a string into words
  * @str: the string
  * Return: an array of strings
@@ -48,14 +71,14 @@ char **strtow(char *str)
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	len = _strlen(str);
-	words = malloc(sizeof(char) * (len + 1));
+	word_count = count_words(str, len);
+	words = malloc(sizeof(char *) * (word_count + 1));
 
 	if (words == NULL)
 		return (NULL);
 	word_count = 0;
-	i = 0;
 
-	while (i < len)
+	for (i = 0; i < len;)
 	{
 		while (str[i] == ' ' && i < len)
 			i++;
