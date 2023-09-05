@@ -73,5 +73,4 @@ char *argstostr(int ac, char **av)
 	}
 	*str = '\0';
 	return (total);
-	return (str);
 }
