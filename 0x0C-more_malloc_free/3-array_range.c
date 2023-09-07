@@ -58,19 +58,14 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	arr = _calloc(max - min + 1, sizeof(int) * (max - min + 1));
+	arr = _calloc(max - min + 1, sizeof(int));
 	if (arr == NULL)
 		return (NULL);
 
 	for (i = min; i < max + 1; i++)
 	{
-		if (min == max)
-			arr[j] = i;
-		else
-		{
-			arr[j] = i;
-			j++;
-		}
+		arr[j] = i;
+		j++;
 	}
 
 	return (arr);
