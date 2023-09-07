@@ -62,10 +62,15 @@ int *array_range(int min, int max)
 	if (arr == NULL)
 		return (NULL);
 
-	for (i = min; i <= max; i++)
+	for (i = min; i < max + 1; i++)
 	{
-		arr[j] = i;
-		j++;
+		if (min == max)
+			arr[j] = i;
+		else
+		{
+			arr[j] = i;
+			j++;
+		}
 	}
 
 	return (arr);
