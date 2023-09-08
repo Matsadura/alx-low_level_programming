@@ -10,10 +10,16 @@ While it offers unparalleled efficiency, low-level C programming necessitates me
 
 | Project | Summary |
 |---------|---------|
-|[0x00-hello_world](0x00-hello_world)  | |
-| [0x01-variables_if_else_while](./0x01-variables_if_else_while)| |
-| | |
-| | |
-| | |
-| | |
-| | |
+|[0x00-hello_world](0x00-hello_world)  | Introduction to C programming with a focus on creating and running a basic "Hello, World!" program. |
+| [0x01-variables_if_else_while](./0x01-variables_if_else_while)|Covers the fundamentals of variables, conditional statements (if-else), and loops. |
+|[0x02-functions_nested_loops](./0x02-functions_nested_loops) | Explores the concept of functions and nested loops in C, essential for structuring code and implementing repetitive tasks.|
+|[0x03-debugging](./0x03-debugging) | Provides insights into debugging techniques, helping you identify and fix errors in your C programs.|
+|[0x04-more_functions_nested_loops](./0x04-more_functions_nested_loops) |Builds upon the previous section by introducing more advanced functions and nested loop structures. |
+|[0x05-pointers_arrays_strings](./0x05-pointers_arrays_strings) | Focuses on pointers, arrays, and strings, fundamental concepts for working with data in C.|
+|[0x06-pointers_arrays_strings](./0x06-pointers_arrays_strings) | Further deepens your understanding of pointers, arrays, and strings, with practical applications.|
+|[0x07-pointers_arrays_strings](./0x07-pointers_arrays_strings) |  Continues the exploration of pointers, arrays, and strings, expanding your knowledge of these data structures.|
+|[0x08-recursion](./0x08-recursion) |Dives into the concept of recursion, a technique where functions call themselves, and explores its applications.. |
+|[0x09-static_libraries](./0x09-static_libraries) |Covers the creation and usage of static libraries in C, which helps organize and reuse code efficiently. |
+|[0x0A-argc_argv](./0x0A-argc_argv) | Explores the use of argc and argv for handling command-line arguments in C programs.|
+|[0x0B-malloc_free](./0x0B-malloc_free) | Focuses on dynamic memory allocation with malloc and memory deallocation with free in C.|
+|[0x0C-more_malloc_free](./0x0C-more_malloc_free) | Expands on dynamic memory management with further insights into malloc and free.|
