@@ -7,3 +7,13 @@ In this approach, developers typically utilize assembly language or machine code
 Low-level C programming empowers programmers to exercise fine-grained control over system resources, enabling them to create finely tuned and efficient code. It finds applications in scenarios where performance is paramount, such as building operating systems, device drivers, embedded systems, and software that necessitates direct interaction with hardware.
 
 While it offers unparalleled efficiency, low-level C programming necessitates meticulous attention to detail and a robust comprehension of computer architecture concepts. As technology progresses, low-level C programming retains its significance for those seeking to optimize software performance and attain an in-depth comprehension of how computers execute instructions.
+
+| Project | Summary |
+|---------|---------|
+|[0x00-hello_world](0x00-hello_world)  | |
+| [0x01-variables_if_else_while](./0x01-variables_if_else_while)| |
+| | |
+| | |
+| | |
+| | |
+| | |
