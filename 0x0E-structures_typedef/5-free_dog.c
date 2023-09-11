@@ -1,7 +1,7 @@
 #include "dog.h"
 
 /**
- * free_dogs- frees dogs from captivity
+ * free_dogs - frees dogs from captivity
  * @d: pointer to the captive dogs
  */
 
