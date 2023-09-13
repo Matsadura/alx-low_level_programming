@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <stddef.h>
 
 /**
  * _puts - prints a string
@@ -11,8 +10,6 @@ void _puts(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 		_putchar(s[i]);
-	if (s[i] == '\0')
-		return;
 	_putchar('\n');
 }
 
