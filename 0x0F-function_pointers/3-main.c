@@ -12,15 +12,15 @@ int main(int argc, char **argv)
 	int a, b;
 	char *op;
 
-	op = argv[2];
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+
+	op = argv[2];
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 	if (strcmp(op, "/") != 0 && strcmp(op, "*") != 0
 			&& strcmp(op, "+") != 0 && strcmp(op, "%") != 0 && strcmp(op, "-") != 0)
