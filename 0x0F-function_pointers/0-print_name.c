@@ -5,17 +5,13 @@
  * _puts_recursion - prints a string
  * @s: the string
  */
-void _puts_recursion(char *s)
+void _puts(char *s)
 {
 	int i = 0;
 
-	if (s[i] == '\0')
-	{
-		_putchar('\n');
-		return;
-	}
-	_putchar(s[i]);
-	_puts_recursion(s + 1);
+	for (i = 0; s[i] != '\0'; i++)
+		_putchar(s[i]);
+	_putchar('\n');
 }
 
 /**
@@ -26,6 +22,5 @@ void _puts_recursion(char *s)
 
 void print_name(char *name, void (*f)(char *))
 {
-	f = _puts_recursion;
 	f(name);
 }
