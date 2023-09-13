@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * _puts_recursion - prints a string
+ * _puts - prints a string
  * @s: the string
  */
 void _puts(char *s)
@@ -11,6 +11,8 @@ void _puts(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 		_putchar(s[i]);
+	if (s[i] == '\0')
+		return;
 	_putchar('\n');
 }
 
