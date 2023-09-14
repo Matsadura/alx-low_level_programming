@@ -29,12 +29,12 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				s = va_arg(all, char *);
-				if (s == NULL)
+				if (s != NULL)
 				{
-					printf("(nil)");
+					printf("%s", s);
 					break;
 				}
-				printf("%s", s);
+				printf("(nil)");
 				break;
 			default:
 				z = 1;
@@ -44,6 +44,6 @@ void print_all(const char * const format, ...)
 		if (z == 0 && j > 0 && format[j] != '\0')
 			printf(", ");
 	}
-	va_end(all);
 	printf("\n");
+	va_end(all);
 }
