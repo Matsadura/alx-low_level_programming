@@ -7,13 +7,15 @@
 
 void print_all(const char * const format, ...)
 {
-	int j = 0, z = 0;
+	int j = 0;
 	va_list all;
 	char *s;
 
 	va_start(all, format);
 	while (format[j] != '\0')
 	{
+		int z = 0;
+
 		switch (format[j])
 		{
 			case 'c':
@@ -39,7 +41,7 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		j++;
-		if (z == 1 && j > 0 && format[j] != '\0')
+		if (z == 0 && j > 0 && format[j] != '\0')
 			printf(", ");
 	}
 	va_end(all);
