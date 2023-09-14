@@ -1,49 +1,95 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - prints anything
- * @format: the type of argument
+ * _char - Prints a character
+ * @args: character to print (from va_list)
+ *
+ * Return: void
+ */
+
+void _char(va_list args)
+{
+	printf("%c", va_arg(args, int));
+}
+
+/**
+ * _int - Prints an integer
+ * @args: integer to print (from va_list)
+ *
+ * Return: void
+ */
+
+void _int(va_list args)
+{
+	printf("%d", va_arg(args, int));
+}
+
+/**
+ * _float - Prints a float number
+ * @args: number to print (from va_list)
+ *
+ * Return: void
+ */
+
+void _float(va_list args)
+{
+	printf("%f", va_arg(args, double));
+}
+
+/**
+ * _str - Prints a string
+ * @args: string to print (from va_list)
+ *
+ * Return: void
+ */
+
+void _str(va_list args)
+{
+	char *str = va_arg(args, char *);
+
+	printf("%s", str == NULL ? "(nil)" : str);
+}
+
+/**
+ * print_all - Prints argument depending on its format
+ * @format: string of format chars
+ *
+ * Return: void
  */
 
 void print_all(const char * const format, ...)
 {
-	int j = 0;
-	va_list all;
-	char *s;
+	int i;
+	int j;
+	va_list args;
 
-	va_start(all, format);
-	while (format[j] != '\0')
+	_struct arr[] = {
+		{'c', _char},
+		{'i', _int},
+		{'f', _float},
+		{'s', _str},
+	};
+
+	va_start(args, format);
+
+	i = 0;
+
+	while (format && format[i])
 	{
-		int z = 0;
-
-		switch (format[j])
+		j = 0;
+		while (j < 5)
 		{
-			case 'c':
-				printf("%c", va_arg(all, int));
+			if (format[i] == arr[j].c)
+			{
+				arr[j].f(args);
+				if (format[i + 1])
+					printf(", ");
 				break;
-			case 'i':
-				printf("%d", va_arg(all, int));
-				break;
-			case 'f':
-				printf("%f", va_arg(all, double));
-				break;
-			case 's':
-				s = va_arg(all, char *);
-				if (s != NULL)
-				{
-					printf("%s", s);
-					break;
-				}
-				printf("(nil)");
-				break;
-			default:
-				z = 1;
-				break;
+			}
+			j++;
 		}
-		j++;
-		if (z == 0 && j > 0 && format[j] != '\0')
-			printf(", ");
+		i++;
 	}
 	printf("\n");
-	va_end(all);
+	va_end(args);
 }
