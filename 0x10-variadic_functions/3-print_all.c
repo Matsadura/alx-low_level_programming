@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <string.h>
 
 /**
  * print_all - prints anything
@@ -18,20 +17,16 @@ void print_all(const char * const format, ...)
 		switch (format[j])
 		{
 			case 'c':
-				z = 1;
 				printf("%c", va_arg(all, int));
 				break;
 			case 'i':
-				z = 1;
 				printf("%d", va_arg(all, int));
 				break;
 			case 'f':
-				z = 1;
 				printf("%f", va_arg(all, double));
 				break;
 			case 's':
 				s = va_arg(all, char *);
-				z = 1;
 				if (s == NULL)
 				{
 					printf("(nil)");
@@ -40,7 +35,7 @@ void print_all(const char * const format, ...)
 				printf("%s", s);
 				break;
 			default:
-				z = 0;
+				z = 1;
 				break;
 		}
 		j++;
