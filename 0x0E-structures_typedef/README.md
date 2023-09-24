@@ -14,4 +14,4 @@ A ``structure`` is a composite data type that allows you to group together varia
 | [2-print_dog.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x0E-structures_typedef/2-print_dog.c) | Prints a ``struct dog``. |
 | [4-new_dog.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x0E-structures_typedef/4-new_dog.c) | Creates a new dog. |
 | [5-free_dog.c](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x0E-structures_typedef/5-free_dog.c) | Frees dogs. |
-| [dog.h](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x0E-structures_typedef/dog.h) | Defines a new type ``struct dog`` with the following elements: ``name, type = char *``, ``age, type = float,`` ``owner, type = char *``. and defines a new type dog_t as a new name for the type ``struct dog``. |
+| [dog.h](https://github.com/Matsadura/alx-low_level_programming/blob/master/0x0E-structures_typedef/dog.h) | Defines a new type ``struct dog`` with the following elements: ``name, type = char *``, ``age, type = float,`` ``owner, type = char *``. and defines a new type ``dog_t`` as a new name for the type ``struct dog``. |
