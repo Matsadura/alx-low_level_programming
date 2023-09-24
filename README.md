@@ -29,6 +29,5 @@ While it offers unparalleled efficiency, low-level C programming necessitates me
 |[0x0E-structures_typedef](./0x0E-structures_typedef) | Explores C structures and typedef, enabling you to define custom data types and organize data efficiently. |
 |[0x0F-function_pointers](./0x0F-function_pointers) | Introduces the concept of function pointers in C, allowing you to work with functions as data, opening up powerful possibilities. |
 |[0x10-variadic_functions](./0x10-variadic_functions) | Dives into variadic functions, which can accept a variable number of arguments, enhancing flexibility in function design. |
-|[0x11-C-printf](./0x11-C-printf) | Implements a custom version of the `printf` function in C, providing in-depth understanding of how printf works and its customization. |
 |[0x12-singly_linked_lists](./0x12-singly_linked_lists) | Covers singly linked lists, a fundamental data structure, and their operations in C, enabling dynamic data storage. |
 
