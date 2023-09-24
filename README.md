@@ -8,6 +8,8 @@ Low-level C programming empowers programmers to exercise fine-grained control ov
 
 While it offers unparalleled efficiency, low-level C programming necessitates meticulous attention to detail and a robust comprehension of computer architecture concepts. As technology progresses, low-level C programming retains its significance for those seeking to optimize software performance and attain an in-depth comprehension of how computers execute instructions.
 
+
+
 | Project | Summary |
 |---------|---------|
 |[0x00-hello_world](0x00-hello_world)  | Introduction to C programming with a focus on creating and running a basic "Hello, World!" program. |
@@ -23,3 +25,10 @@ While it offers unparalleled efficiency, low-level C programming necessitates me
 |[0x0A-argc_argv](./0x0A-argc_argv) | Explores the use of argc and argv for handling command-line arguments in C programs.|
 |[0x0B-malloc_free](./0x0B-malloc_free) | Focuses on dynamic memory allocation with malloc and memory deallocation with free in C.|
 |[0x0C-more_malloc_free](./0x0C-more_malloc_free) | Expands on dynamic memory management with further insights into malloc and free.|
+|[0x0D-preprocessor](./0x0D-preprocessor) | Covers the C preprocessor and its role in code preprocessing, including macros and file inclusion. |
+|[0x0E-structures_typedef](./0x0E-structures_typedef) | Explores C structures and typedef, enabling you to define custom data types and organize data efficiently. |
+|[0x0F-function_pointers](./0x0F-function_pointers) | Introduces the concept of function pointers in C, allowing you to work with functions as data, opening up powerful possibilities. |
+|[0x10-variadic_functions](./0x10-variadic_functions) | Dives into variadic functions, which can accept a variable number of arguments, enhancing flexibility in function design. |
+|[0x11-C-printf](./0x11-C-printf) | Implements a custom version of the `printf` function in C, providing in-depth understanding of how printf works and its customization. |
+|[0x12-singly_linked_lists](./0x12-singly_linked_lists) | Covers singly linked lists, a fundamental data structure, and their operations in C, enabling dynamic data storage. |
+
