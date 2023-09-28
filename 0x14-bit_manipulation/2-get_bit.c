@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * get_bit - Returns the value of a bit at a
@@ -19,6 +20,9 @@ int get_bit(unsigned long int n, unsigned int index)
 		tmp >>= 1;
 		i++;
 	}
+	if (index >= CHAR_BIT * sizeof(unsigned long int))
+		return (-1);
+
 	if (index >= i)
 		return (-1);
 
