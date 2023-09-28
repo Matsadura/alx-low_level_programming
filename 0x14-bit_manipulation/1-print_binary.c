@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 	int i = 0;
 
 	if (n == 0)
-		_putchar(0 + '0');
+		_putchar('0');
 
 	while (tmp >= 1)
 	{
