@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 	if (n == 0)
 		_putchar(0 + '0');
 
-	while (tmp != 0)
+	while (tmp >= 1)
 	{
 		tmp >>= 1;
 		i++;
