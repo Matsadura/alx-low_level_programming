@@ -25,7 +25,10 @@ void print_binary(unsigned long int n)
 	{
 		tmp = n;
 		tmp >>= i;
-		_putchar(tmp + '0');
+		if (tmp == 1)
+			_putchar(1 + '0');
+		else
+			_putchar(0 + '0');
 		tmp <<= i;
 		n = n - tmp;
 		i--;
