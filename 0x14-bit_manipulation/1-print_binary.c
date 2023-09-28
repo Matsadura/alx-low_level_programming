@@ -19,6 +19,7 @@ void print_binary(unsigned long int n)
 		tmp >>= 1;
 		i++;
 	}
+	tmp = n;
 	i--;
 
 	while (i >= 0)
