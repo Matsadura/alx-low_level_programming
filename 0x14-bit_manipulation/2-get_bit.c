@@ -11,18 +11,11 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int i = 0;
 	unsigned long int m = 1;
-	unsigned long int b, tmp = n;
+	unsigned long int b;
 
-	while (tmp != 0)
-	{
-		tmp >>= 1;
-		i++;
-	}
 	if (index >= CHAR_BIT * sizeof(unsigned long int))
 		return (-1);
-
 
 	m <<= index;
 
