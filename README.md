@@ -31,4 +31,7 @@ While it offers unparalleled efficiency, low-level C programming necessitates me
 |[0x10-variadic_functions](./0x10-variadic_functions) | Dives into variadic functions, which can accept a variable number of arguments, enhancing flexibility in function design. |
 |[0x11-printf](https://github.com/Matsadura/printf)| Implements a custom version of the printf function in C, providing in-depth understanding of how printf works and its customization. |
 |[0x12-singly_linked_lists](./0x12-singly_linked_lists) | Covers singly linked lists, a fundamental data structure, and their operations in C, enabling dynamic data storage. |
-
+|[0x13-more_singly_linked_lists](./0x13-more_singly_linked_lists) | Expands on the concepts of singly linked lists in C, introducing additional operations and techniques for manipulating linked structures. |
+|[0x14-bit_manipulation](./0x14-bit_manipulation) | Delves deeper into bit manipulation in C, exploring advanced bitwise operations and their applications in various programming scenarios. |
+|[0x15-file_io](./0x15-file_io) | Explores file input/output operations in C, covering techniques for reading from and writing to files, essential for data storage and manipulation. |
+|[simple_shell](https://github.com/Matsadura/simple_shell)| Develops a basic Unix shell from scratch, providing hands-on experience in implementing shell functionalities such as command execution and piping. |
