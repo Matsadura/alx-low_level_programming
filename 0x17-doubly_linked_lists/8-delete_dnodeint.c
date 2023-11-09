@@ -1,53 +1,46 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index - deletes a note at
- *	and index in a doubly linked list
+ * delete_dnodeint_at_index - this functino deletes a node
+ *	at given index
  * @head: the head of the list
- * @index: the index of the node
- * Return: 1 if it succeeded, -1 otherwise
+ * @index: the index of the node to be removed
+ *
+ * Return: 1 if the function succeed or -1 if it failes
  */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *current = *head, *length = *head;
-	unsigned int len = 0, count = 0;
+	dlistint_t *current = *head;
+	unsigned int i;
 
-	while (length)
-	{
-		length = length->next;
-		len++;
-	}
-	if (*head == NULL || index > len)
+
+	if (current == NULL)
 		return (-1);
-	while (count < index)
+	else if (current->next == NULL && index == 0)
+		*head = NULL;
+	else if (index == 0)
 	{
-		current = current->next;
-		count++;
-	}
-	if (index == 0)
-	{
-		current = *head;
-		if (current->next)
-		{
-
-			if (len != 0)
-				(current->next)->prev = *head;
-			else
-				current->prev = NULL;
-		}
+		(current->next)->prev = NULL;
 		*head = current->next;
 	}
 	else
 	{
-		if (current->next != NULL)
+		for (i = 0; i < index; i++)
+		{
+			if (current == NULL)
+				return (-1);
+			current = current->next;
+		}
+		if (current->next == NULL)
+			(current->prev)->next = NULL;
+		else
 		{
 			(current->prev)->next = current->next;
 			(current->next)->prev = current->prev;
 		}
-		else
-			current->prev->next = NULL;
 	}
+
 	free(current);
 	return (1);
 }
