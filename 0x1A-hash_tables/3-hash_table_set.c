@@ -22,6 +22,12 @@ int handle_coll(hash_table_t *ht, size_t i, const char *key, const char *value)
 		free(new);
 		return (0);
 	}
+	new->value = strdup(value);
+	if (new->value == NULL)
+	{
+		free(new->key), free(new);
+		return (0);
+	}
 	current = ht->array[i];
 	while (current)
 	{
@@ -41,12 +47,6 @@ int handle_coll(hash_table_t *ht, size_t i, const char *key, const char *value)
 			return (1);
 		}
 		current = current->next;
-	}
-	new->value = strdup(value);
-	if (new->value == NULL)
-	{
-		free(new->key), free(new);
-		return (0);
 	}
 	new->next = ht->array[i];
 	ht->array[i] = new;
