@@ -1,5 +1,50 @@
 #include "hash_tables.h"
 
+
+int handle_coll(hash_table_t *ht, size_t i, const char *key, const char *value)
+{
+	hash_node_t *new, *current;
+
+	new = malloc(sizeof(hash_node_t));
+	if (new == NULL)
+		return (0);
+	new->key = strdup(key);
+	if (new->key == NULL)
+	{
+		free(new);
+		return (0);
+	}
+	current = ht->array[i];
+	while (current)
+	{
+		if (strcmp(current->key, key) == 0)
+		{
+			free(current->value);
+			current->value = strdup(value);
+			if (current->value == NULL)
+			{
+				free(new->key);
+				free(new);
+				return (0);
+			}
+			free(new->key);
+			free(new->value);
+			free(new);
+			return (1);
+		}
+		current = current->next;
+	}
+	new->value = strdup(value);
+	if (new->value == NULL)
+	{
+		free(new->key), free(new);
+		return (0);
+	}
+	new->next = ht->array[i];
+	ht->array[i] = new;
+	return (1);
+}
+
 /**
  * hash_table_set - adds an element to the hash
  *	table
@@ -42,17 +87,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-		hash_node_t *new;
-
-		new = malloc(sizeof(hash_node_t));
-		if (new == NULL)
-			return (0);
-		new->key = strdup(key);
-		if (strcmp(new->key, key) == 0)
-			free(new->value);
-		new->value = strdup(value);
-		new->next = ht->array[index];
-		ht->array[index] = new;
+		handle_coll(ht, index, key, value);
 	}
 	return (1);
 }
