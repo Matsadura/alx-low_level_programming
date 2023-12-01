@@ -1,5 +1,13 @@
 #include "hash_tables.h"
 
+/**
+ * handle_coll - handles the collision
+ * @ht: the hash table
+ * @i: the index of the key
+ * @key: the key
+ * @value: the value associated with the key
+ * Return: 1 if succeeded, 0 otherwise
+ */
 
 int handle_coll(hash_table_t *ht, size_t i, const char *key, const char *value)
 {
