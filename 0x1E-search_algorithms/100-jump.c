@@ -66,6 +66,6 @@ int jump_search(int *array, size_t size, int value)
 			R = R + M;
 	}
 	printf("Value found between indexes [%ld] and [%ld]\n", L - M, L);
-	Result = _linear_search(array, L, size, value);
+	Result = _linear_search(array, L - M, size, value);
 	return (Result);
 }
